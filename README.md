@@ -1,11 +1,19 @@
 # update-script-arch-linux
-https://wiki.archlinux.org/title/desktop_entries
 
-excution of the script with Desktop Entry (.desktop):
+Place the following update.desktop file in:
+
+~/.config/autostart/update.desktop
+
+This setup is intended for zsh users. 
+
+To execute the script with a Desktop Entry (.desktop) file, use the following configuration:
+
 ```
 [Desktop Entry]
 Type=Application
 Terminal=true
 Name=update
-Exec=zsh -c '/home/marc/Project/routine_project/update.sh; zsh'
+Exec=zsh -c '/home/project/update.sh ; zsh'
 ```
+
+Replace /home/project/update.sh with the actual path to your script.
